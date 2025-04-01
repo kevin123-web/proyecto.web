@@ -1,0 +1,126 @@
+body {
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    background-color:black;
+    }
+    section{
+    height:100%;
+    width:100%;
+      position:absolute ;  background:radial-gradient(#333,#000);
+    }
+    .leaf{
+        position:absolute ;
+        width:100%;
+        height:100%;
+        top:0;
+        left:0;
+        pointer-events: none; /* Evita que las hojas bloqueen el clic */
+    }
+    .leaf div{
+    position:absolute ;
+    }
+    .leaf div:nth-child(1){
+        left:20%; 
+        animation:fall 15s linear infinite ;
+        animation-delay:-2s;
+    
+    }
+    .leaf div:nth-child(2){
+        left:70%; 
+        animation:fall 15s linear infinite ;
+        animation-delay:-4s;
+    }
+    .leaf div:nth-child(3){
+        left:10%; 
+        animation:fall 20s linear infinite ;
+        animation-delay:-7s;
+        
+    }
+    .leaf div:nth-child(4){
+        left:50%; 
+       animation:fall 18s linear infinite ; 
+       animation-delay:-5s;
+    }
+    .leaf div:nth-child(5){
+        left:85%; 
+        animation:fall 14s linear infinite ;
+        animation-delay:-5s;
+    }
+    .leaf div:nth-child(6){
+        left:15%; 
+        animation:fall 16s linear infinite ;
+        animation-delay:-10s;
+    }
+    .leaf div:nth-child(7){
+        left:90%; 
+        animation:fall 15s linear infinite ;
+        animation-delay:-4s;
+    }
+    
+    @keyframes fall{
+        0%{
+            opacity:1;
+            top:-10%;
+            transform: translateX(20px) rotate(0deg);
+        }
+        20%{
+            opacity:0.8;
+            transform: translateX(20px) rotate(0deg);
+        }
+        40%{
+    
+            transform: translateX(20px) rotate(0deg);
+        }
+        60%{
+            
+            transform: translateX(20px) rotate(0deg);
+        }
+        80%{
+        
+            transform: translateX(20px) rotate(0deg);
+        }
+        100%{
+            
+            top:110%;
+            transform: translateX(20px) rotate(0deg);
+        }
+        }
+    .leaf1{
+        transform: rotateX(180deg);
+    }
+    h2{
+        position:absolute ;
+        top:40%;
+        width:100%;
+        font-family: 'Courgette', cursive;
+        font-size:4em;
+        text-align:center;
+        transform:translate ;
+        color:#fff;
+        transform:translateY (-50%);
+    }
+    .contenido-pantalla {
+        display: flex;
+        justify-content: center; /* Centrado horizontal */
+        align-items: center; /* Centrado vertical */
+        height: 100vh; /* Altura completa de la ventana */
+    }
+    
+    .button {
+        display: inline-block;
+        padding: 15px 30px; /* Aumenta el espacio interno del botón */
+        background-color: #28a745;
+        color: #fff;
+        font-size: 24px; /* Aumenta el tamaño del texto */
+        text-decoration: none;
+        border-radius: 10px; /* Opcional: hace el borde un poco más redondeado */
+        margin-top: 50px;
+        transform: translateY(50px);
+    }
+    
+    .verde {
+        background-color: #4caf50;
+        color: #fff;
+    }
+    
